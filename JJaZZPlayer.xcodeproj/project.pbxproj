@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04BC13BF3268B43F996FC936 /* PlayerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1523E2EEB460D0BCF3741B24 /* PlayerSettings.swift */; };
+		05EED54AC18F204E295C9B5D /* PlayerControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535A393153B2E05C361F3A9C /* PlayerControlsView.swift */; };
+		0605E1C9095268E39CEBB5C3 /* ProgramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9F505B4DEB6B4BF2842F73 /* ProgramTests.swift */; };
+		1B19A93A725695FEFBC28BA3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF737A146F72DCCA8489878 /* SettingsView.swift */; };
+		1C5A686BDA0C6E0B3F239B35 /* PlayerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DB780632A9768FB45D18FF /* PlayerButton.swift */; };
+		1EDF2AD6D2C68BFA99999D19 /* ProgramListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3DDE3878CD6CF83519ABB /* ProgramListViewModel.swift */; };
+		29F17CF4EF984A14EC1CD93B /* JJazzScraperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A9BA70CC07596C657295C7 /* JJazzScraperTests.swift */; };
+		2B3B03384D894020BD15FC35 /* ProgramListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A3C4510CD7580D7D400544 /* ProgramListView.swift */; };
+		386D11E9D1FE8542EB728543 /* JJazzScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E58E7F01EA1522F6C9CE494 /* JJazzScraper.swift */; };
+		3C6F0D41D0A2EA0D62F7D105 /* JJaZZPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F13CDFFC9DC4ACFFB42F4E /* JJaZZPlayerApp.swift */; };
+		413F6B03DA5ED04879375F26 /* TrackRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8CADF219EE73E9D8971A68 /* TrackRowView.swift */; };
+		4E75082F388A41F0EAD5997A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9241EAA9F4931D30D294CA6C /* Assets.xcassets */; };
+		8D2F0B1DE9C4A7B68DE8342F /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B72CA31647824AAA03F9C5 /* Track.swift */; };
+		8E383351D0E1970C5E48ED70 /* AudioPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351AF72B01A5FF6D393C0AD4 /* AudioPlayerService.swift */; };
+		A740084EC51B15E528CF337A /* ProgramRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A9369091A0975AA0BF505F /* ProgramRowView.swift */; };
+		C3B21581D5F35818E217AF85 /* ProgramDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A9F53B978E5C0FA1256DE /* ProgramDetailView.swift */; };
+		C8F5FBC0AFB3135CAE59337D /* PlaylistParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C213A86B9AC896C1015A409 /* PlaylistParserTests.swift */; };
+		E72EEA44C2C160F4A471F396 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4AC06762E68FF293CEF3E8 /* Program.swift */; };
+		EC9CE86A46F990887B0353A9 /* PlayerSettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D86984F1064C1711248A3 /* PlayerSettingsTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03B93D82F11F8ECF33B3CB3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36E5DF4FF123BA5CBF458429 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF8E1794818224689F651E68;
+			remoteInfo = JJaZZPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A9F505B4DEB6B4BF2842F73 /* ProgramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramTests.swift; sourceTree = "<group>"; };
+		0E58E7F01EA1522F6C9CE494 /* JJazzScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJazzScraper.swift; sourceTree = "<group>"; };
+		1523E2EEB460D0BCF3741B24 /* PlayerSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSettings.swift; sourceTree = "<group>"; };
+		29A3C4510CD7580D7D400544 /* ProgramListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramListView.swift; sourceTree = "<group>"; };
+		351AF72B01A5FF6D393C0AD4 /* AudioPlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerService.swift; sourceTree = "<group>"; };
+		48A9369091A0975AA0BF505F /* ProgramRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramRowView.swift; sourceTree = "<group>"; };
+		535A393153B2E05C361F3A9C /* PlayerControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControlsView.swift; sourceTree = "<group>"; };
+		67A9BA70CC07596C657295C7 /* JJazzScraperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJazzScraperTests.swift; sourceTree = "<group>"; };
+		6C213A86B9AC896C1015A409 /* PlaylistParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistParserTests.swift; sourceTree = "<group>"; };
+		84BC8A063783D46EB0E2FDFF /* JJaZZPlayerTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = JJaZZPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86F13CDFFC9DC4ACFFB42F4E /* JJaZZPlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJaZZPlayerApp.swift; sourceTree = "<group>"; };
+		9241EAA9F4931D30D294CA6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94129833EB9D12F1DB753DD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9F4AC06762E68FF293CEF3E8 /* Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
+		A0C3DDE3878CD6CF83519ABB /* ProgramListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramListViewModel.swift; sourceTree = "<group>"; };
+		AA8CADF219EE73E9D8971A68 /* TrackRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackRowView.swift; sourceTree = "<group>"; };
+		C489F720B800FCFCB4F2047B /* JJaZZPlayer.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = JJaZZPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAF737A146F72DCCA8489878 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D4B72CA31647824AAA03F9C5 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		D9DB780632A9768FB45D18FF /* PlayerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerButton.swift; sourceTree = "<group>"; };
+		E95D86984F1064C1711248A3 /* PlayerSettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSettingsTests.swift; sourceTree = "<group>"; };
+		F69A9F53B978E5C0FA1256DE /* ProgramDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		035F4EB97B5B9C2BF239A1BE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A0C3DDE3878CD6CF83519ABB /* ProgramListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		038FA656135C0AD316EBDBEE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				351AF72B01A5FF6D393C0AD4 /* AudioPlayerService.swift */,
+				0E58E7F01EA1522F6C9CE494 /* JJazzScraper.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2740E1C8B13F274D29A4AB51 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9DB780632A9768FB45D18FF /* PlayerButton.swift */,
+				1523E2EEB460D0BCF3741B24 /* PlayerSettings.swift */,
+				9F4AC06762E68FF293CEF3E8 /* Program.swift */,
+				D4B72CA31647824AAA03F9C5 /* Track.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2A0BE9B34A4599382A787319 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C489F720B800FCFCB4F2047B /* JJaZZPlayer.app */,
+				84BC8A063783D46EB0E2FDFF /* JJaZZPlayerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E8BC688E25CDA8E622DBE0E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9241EAA9F4931D30D294CA6C /* Assets.xcassets */,
+				94129833EB9D12F1DB753DD0 /* Info.plist */,
+				86F13CDFFC9DC4ACFFB42F4E /* JJaZZPlayerApp.swift */,
+				2740E1C8B13F274D29A4AB51 /* Models */,
+				038FA656135C0AD316EBDBEE /* Services */,
+				035F4EB97B5B9C2BF239A1BE /* ViewModels */,
+				9B82A4CBE33299F7E72AE854 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		7039412A82BBC550B5C4B226 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				67A9BA70CC07596C657295C7 /* JJazzScraperTests.swift */,
+				E95D86984F1064C1711248A3 /* PlayerSettingsTests.swift */,
+				6C213A86B9AC896C1015A409 /* PlaylistParserTests.swift */,
+				0A9F505B4DEB6B4BF2842F73 /* ProgramTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		9B82A4CBE33299F7E72AE854 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				535A393153B2E05C361F3A9C /* PlayerControlsView.swift */,
+				F69A9F53B978E5C0FA1256DE /* ProgramDetailView.swift */,
+				29A3C4510CD7580D7D400544 /* ProgramListView.swift */,
+				48A9369091A0975AA0BF505F /* ProgramRowView.swift */,
+				CAF737A146F72DCCA8489878 /* SettingsView.swift */,
+				AA8CADF219EE73E9D8971A68 /* TrackRowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EBA52E633B50B42780D75A6B = {
+			isa = PBXGroup;
+			children = (
+				2E8BC688E25CDA8E622DBE0E /* Sources */,
+				7039412A82BBC550B5C4B226 /* Tests */,
+				2A0BE9B34A4599382A787319 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D0A09B3946C81A1C1639C06 /* JJaZZPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32C69107224EAAD1D4C5E9A4 /* Build configuration list for PBXNativeTarget "JJaZZPlayerTests" */;
+			buildPhases = (
+				38D8520AD3B342D6E70D9915 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00B6EB5BCC27A3D1443B359A /* PBXTargetDependency */,
+			);
+			name = JJaZZPlayerTests;
+			packageProductDependencies = (
+			);
+			productName = JJaZZPlayerTests;
+			productReference = 84BC8A063783D46EB0E2FDFF /* JJaZZPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF8E1794818224689F651E68 /* JJaZZPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 280A3C304757A2DEB66D93A2 /* Build configuration list for PBXNativeTarget "JJaZZPlayer" */;
+			buildPhases = (
+				C47B1B37CD6EB4C557229055 /* Sources */,
+				6D8F8C97A465D8AB7ADC06B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JJaZZPlayer;
+			packageProductDependencies = (
+			);
+			productName = JJaZZPlayer;
+			productReference = C489F720B800FCFCB4F2047B /* JJaZZPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36E5DF4FF123BA5CBF458429 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					8D0A09B3946C81A1C1639C06 = {
+						DevelopmentTeam = F49874RTJM;
+						ProvisioningStyle = Automatic;
+					};
+					EF8E1794818224689F651E68 = {
+						DevelopmentTeam = F49874RTJM;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8D3DC1614B930232C9516698 /* Build configuration list for PBXProject "JJaZZPlayer" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = EBA52E633B50B42780D75A6B;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2A0BE9B34A4599382A787319 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF8E1794818224689F651E68 /* JJaZZPlayer */,
+				8D0A09B3946C81A1C1639C06 /* JJaZZPlayerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D8F8C97A465D8AB7ADC06B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E75082F388A41F0EAD5997A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38D8520AD3B342D6E70D9915 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29F17CF4EF984A14EC1CD93B /* JJazzScraperTests.swift in Sources */,
+				EC9CE86A46F990887B0353A9 /* PlayerSettingsTests.swift in Sources */,
+				C8F5FBC0AFB3135CAE59337D /* PlaylistParserTests.swift in Sources */,
+				0605E1C9095268E39CEBB5C3 /* ProgramTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C47B1B37CD6EB4C557229055 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E383351D0E1970C5E48ED70 /* AudioPlayerService.swift in Sources */,
+				3C6F0D41D0A2EA0D62F7D105 /* JJaZZPlayerApp.swift in Sources */,
+				386D11E9D1FE8542EB728543 /* JJazzScraper.swift in Sources */,
+				1C5A686BDA0C6E0B3F239B35 /* PlayerButton.swift in Sources */,
+				05EED54AC18F204E295C9B5D /* PlayerControlsView.swift in Sources */,
+				04BC13BF3268B43F996FC936 /* PlayerSettings.swift in Sources */,
+				E72EEA44C2C160F4A471F396 /* Program.swift in Sources */,
+				C3B21581D5F35818E217AF85 /* ProgramDetailView.swift in Sources */,
+				2B3B03384D894020BD15FC35 /* ProgramListView.swift in Sources */,
+				1EDF2AD6D2C68BFA99999D19 /* ProgramListViewModel.swift in Sources */,
+				A740084EC51B15E528CF337A /* ProgramRowView.swift in Sources */,
+				1B19A93A725695FEFBC28BA3 /* SettingsView.swift in Sources */,
+				8D2F0B1DE9C4A7B68DE8342F /* Track.swift in Sources */,
+				413F6B03DA5ED04879375F26 /* TrackRowView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00B6EB5BCC27A3D1443B359A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF8E1794818224689F651E68 /* JJaZZPlayer */;
+			targetProxy = 03B93D82F11F8ECF33B3CB3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		002FB2E10294199C317D3CEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F49874RTJM;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shin.JJaZZPlayerTests;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JJaZZPlayer.app/JJaZZPlayer";
+			};
+			name = Release;
+		};
+		2B240AA81103F5FF2C77B884 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F49874RTJM;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shin.JJaZZPlayerTests;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JJaZZPlayer.app/JJaZZPlayer";
+			};
+			name = Debug;
+		};
+		36E4435988A1FD2563B55C51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F49874RTJM;
+				INFOPLIST_FILE = Sources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shin.JJaZZPlayer;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		79F8B69D2001B776A24826F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7E28866533E16497A180721E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B1271794C387DE92F6D8DACC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F49874RTJM;
+				INFOPLIST_FILE = Sources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shin.JJaZZPlayer;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		280A3C304757A2DEB66D93A2 /* Build configuration list for PBXNativeTarget "JJaZZPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1271794C387DE92F6D8DACC /* Debug */,
+				36E4435988A1FD2563B55C51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		32C69107224EAAD1D4C5E9A4 /* Build configuration list for PBXNativeTarget "JJaZZPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B240AA81103F5FF2C77B884 /* Debug */,
+				002FB2E10294199C317D3CEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8D3DC1614B930232C9516698 /* Build configuration list for PBXProject "JJaZZPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79F8B69D2001B776A24826F5 /* Debug */,
+				7E28866533E16497A180721E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 36E5DF4FF123BA5CBF458429 /* Project object */;
+}
