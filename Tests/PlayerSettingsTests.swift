@@ -11,7 +11,7 @@ final class PlayerSettingsTests: XCTestCase {
     func testSelectedButtonsSortedByAllCases() {
         // allCases order: prevTrack, skipBack30, skipBack10, skipForward10, nextTrack
         let settings = makeFreshSettings(initial: [.nextTrack, .prevTrack, .skipBack30])
-        XCTAssertEqual(settings.selectedButtons, [.prevTrack, .skipBack30, .nextTrack])
+        XCTAssertEqual(settings.selectedButtons, [.skipBack30, .prevTrack, .nextTrack])
     }
 
     func testToggleAddsButton() {

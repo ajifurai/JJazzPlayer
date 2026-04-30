@@ -1,5 +1,5 @@
 enum PlayerButton: String, CaseIterable, Identifiable, Hashable {
-    case prevTrack, skipBack30, skipBack10, skipForward10, nextTrack
+    case skipBack30, skipBack10, prevTrack, nextTrack, skipForward10
 
     var id: String { rawValue }
 
