@@ -22,4 +22,8 @@ enum PlayerButton: String, CaseIterable, Identifiable, Hashable {
         case .nextTrack:     "次の曲"
         }
     }
+
+    var isRightOfPlay: Bool {
+        self == .skipForward10 || self == .nextTrack
+    }
 }

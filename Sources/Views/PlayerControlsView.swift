@@ -6,7 +6,6 @@ struct PlayerControlsView: View {
     @ObservedObject private var settings = PlayerSettings.shared
     @State private var isDragging = false
     @State private var sliderValue: Double = 0
-    @State private var showSettings = false
 
     var body: some View {
         if let program = player.currentProgram {
@@ -27,7 +26,6 @@ struct PlayerControlsView: View {
         }
         .padding()
         .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 12))
-        .sheet(isPresented: $showSettings) { SettingsView() }
     }
 
     private func currentTrackRow(program: Program) -> some View {
@@ -41,9 +39,6 @@ struct PlayerControlsView: View {
                 }
             }
             Spacer()
-            Button { showSettings = true } label: {
-                Image(systemName: "gearshape").foregroundStyle(.secondary)
-            }
         }
     }
 
@@ -71,14 +66,17 @@ struct PlayerControlsView: View {
     }
 
     private func controlsRow(program: Program) -> some View {
-        let btns = settings.selectedButtons
+        let left = settings.selectedButtons.filter { !$0.isRightOfPlay }
+        let right = settings.selectedButtons.filter { $0.isRightOfPlay }
         return HStack(spacing: 0) {
             Spacer()
-            if btns.count > 0 { actionButton(btns[0], program: program); Spacer() }
-            if btns.count > 1 { actionButton(btns[1], program: program); Spacer() }
+            if left.count > 0 { actionButton(left[0], program: program); Spacer() }
+            if left.count > 1 { actionButton(left[1], program: program); Spacer() }
+            if left.count > 2 { actionButton(left[2], program: program); Spacer() }
             playPauseButton(program: program)
             Spacer()
-            if btns.count > 2 { actionButton(btns[2], program: program); Spacer() }
+            if right.count > 0 { actionButton(right[0], program: program); Spacer() }
+            if right.count > 1 { actionButton(right[1], program: program); Spacer() }
             RoutePickerView().frame(width: 32, height: 32)
         }
     }
