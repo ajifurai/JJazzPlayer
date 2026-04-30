@@ -3,7 +3,6 @@ import SwiftUI
 struct ProgramDetailView: View {
     let program: Program
     @ObservedObject private var player = AudioPlayerService.shared
-    @State private var showSettings = false
 
     var body: some View {
         List {
@@ -18,14 +17,6 @@ struct ProgramDetailView: View {
         .safeAreaInset(edge: .bottom) { PlayerControlsView() }
         .navigationTitle(program.displayTitle)
         .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            ToolbarItem(placement: .primaryAction) {
-                Button { showSettings = true } label: {
-                    Image(systemName: "gearshape")
-                }
-            }
-        }
-        .sheet(isPresented: $showSettings) { SettingsView() }
     }
 
     private func isTrackActive(index: Int) -> Bool {

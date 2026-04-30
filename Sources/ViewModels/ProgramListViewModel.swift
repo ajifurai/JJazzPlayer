@@ -2,14 +2,11 @@ import SwiftUI
 
 @MainActor
 final class ProgramListViewModel: ObservableObject {
-    let showType: ShowType
     @Published var programs: [Program] = []
     @Published var isLoading = false
     @Published var error: String?
 
-    init(showType: ShowType) { self.showType = showType }
-
-    func load() async {
+    func load(showType: ShowType) async {
         isLoading = true
         error = nil
         do {
