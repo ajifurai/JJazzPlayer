@@ -7,15 +7,8 @@ struct SettingsView: View {
     var body: some View {
         NavigationStack {
             List {
-                Section {
-                    ForEach(PlayerButton.allCases) { button in
-                        buttonRow(button)
-                    }
-                } header: {
-                    Text("再生コントロール（最大3つ）")
-                } footer: {
-                    Text("\(settings.selectedSet.count)/3 選択中")
-                }
+                buttonSection
+                dataSection
             }
             .navigationTitle("設定")
             .navigationBarTitleDisplayMode(.inline)
@@ -24,6 +17,18 @@ struct SettingsView: View {
                     Button("完了") { dismiss() }
                 }
             }
+        }
+    }
+
+    private var buttonSection: some View {
+        Section {
+            ForEach(PlayerButton.allCases) { button in
+                buttonRow(button)
+            }
+        } header: {
+            Text("再生コントロール（最大3つ）")
+        } footer: {
+            Text("\(settings.selectedSet.count)/3 選択中")
         }
     }
 
@@ -39,11 +44,20 @@ struct SettingsView: View {
                 Text(button.label)
                     .foregroundStyle(disabled ? Color.secondary : Color.primary)
                 Spacer()
-                if selected {
-                    Image(systemName: "checkmark").foregroundStyle(.blue)
-                }
+                if selected { Image(systemName: "checkmark").foregroundStyle(.blue) }
             }
         }
         .disabled(disabled)
+    }
+
+    private var dataSection: some View {
+        Section("データ管理") {
+            Button("マークをすべてクリア", role: .destructive) {
+                settings.clearAllMarks()
+            }
+            Button("非表示をリセット", role: .destructive) {
+                settings.clearHidden()
+            }
+        }
     }
 }

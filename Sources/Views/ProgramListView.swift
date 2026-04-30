@@ -34,15 +34,42 @@ struct ProgramListView: View {
     }
 
     private var programList: some View {
-        List(viewModel.programs) { program in
+        let visible = viewModel.programs.filter { !settings.hiddenPrograms.contains($0.id) }
+        return List(visible) { program in
             NavigationLink(destination: ProgramDetailView(program: program)) {
                 ProgramRowView(program: program)
+            }
+            .swipeActions(edge: .leading, allowsFullSwipe: false) {
+                markButtons(for: program)
+            }
+            .swipeActions(edge: .trailing) {
+                hideButton(for: program)
             }
         }
         .safeAreaInset(edge: .bottom) { PlayerControlsView() }
         .overlay {
             if viewModel.isLoading { ProgressView() }
             if let err = viewModel.error { Text(err).foregroundStyle(.red).padding() }
+        }
+    }
+
+    private func markButtons(for program: Program) -> some View {
+        let current = settings.programMarks[program.id]
+        return Group {
+            Button { settings.toggleMark(.star, for: program.id) } label: {
+                Label(ProgramMark.star.label,
+                      systemImage: current == .star ? "star.slash.fill" : "star.fill")
+            }.tint(.yellow)
+            Button { settings.toggleMark(.bookmark, for: program.id) } label: {
+                Label(ProgramMark.bookmark.label,
+                      systemImage: current == .bookmark ? "bookmark.slash.fill" : "bookmark.fill")
+            }.tint(.blue)
+        }
+    }
+
+    private func hideButton(for program: Program) -> some View {
+        Button(role: .destructive) { settings.hide(program.id) } label: {
+            Label("非表示", systemImage: "eye.slash.fill")
         }
     }
 }

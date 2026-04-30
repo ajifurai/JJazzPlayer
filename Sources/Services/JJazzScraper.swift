@@ -15,7 +15,7 @@ struct JJazzScraper {
             }
             for await p in group { if let p { programs.append(p) } }
         }
-        return deduplicated(programs).sorted { ($0.displayTitle) > ($1.displayTitle) }
+        return deduplicated(programs).sorted { pickupSortKey($0.displayTitle) > pickupSortKey($1.displayTitle) }
     }
 
     private static func fetchPickupProgram(from url: URL, year: Int, month: Int) async throws -> Program? {
@@ -32,6 +32,14 @@ struct JJazzScraper {
         let names = ["1月","2月","3月","4月","5月","6月",
                      "7月","8月","9月","10月","11月","12月"]
         return "\(year)年\(names[month - 1]) pick-up"
+    }
+
+    private static func pickupSortKey(_ title: String) -> Int {
+        guard let regex = try? NSRegularExpression(pattern: #"(\d{4})年[^\d]*(\d+)月"#),
+              let m = regex.firstMatch(in: title, range: NSRange(title.startIndex..., in: title)),
+              let yrRange = Range(m.range(at: 1), in: title),
+              let moRange = Range(m.range(at: 2), in: title) else { return 0 }
+        return (Int(title[yrRange]) ?? 0) * 100 + (Int(title[moRange]) ?? 0)
     }
 
     // MARK: - 夜ジャズ
